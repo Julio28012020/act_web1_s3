@@ -1,3 +1,15 @@
-// Ejercicio While 3: Validador de Contraseña
-// Desarrolla un programa que use while para solicitar una contraseña hasta que cumpla con los criterios: 
-// mínimo 8 caracteres, al menos una mayúscula, una minúscula y un número.
+let contraseña = "admin123";
+let intentos = 0;
+
+while (contraseña != "admin123") {
+    contraseña = "123456";
+    
+    if (contraseña == "admin123") {
+        console.log("Acceso concedido");
+    } else {
+        intentos++;
+        console.log("Contraseña incorrecta. Intento " + intentos);
+    }
+}
+
+console.log("Intentos fallidos: " + intentos);

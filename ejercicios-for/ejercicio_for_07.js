@@ -1,3 +1,18 @@
-// Ejercicio For 7: Matriz de Suma
-// Usa ciclos for anidados para crear una matriz 5x5 donde cada elemento sea la suma de sus índices (fila + columna). 
-// Muestra la matriz formateada.
+let matriz = [];
+
+for (let fila = 0; fila < 5; fila++) {
+    matriz[fila] = [];
+    for (let columna = 0; columna < 5; columna++) {
+        matriz[fila][columna] = fila + columna;
+    }
+}
+
+console.log("Matriz 5x5:");
+
+for (let fila = 0; fila < 5; fila++) {
+    let filaTexto = "";
+    for (let columna = 0; columna < 5; columna++) {
+        filaTexto += matriz[fila][columna] + " ";
+    }
+    console.log(filaTexto);
+}

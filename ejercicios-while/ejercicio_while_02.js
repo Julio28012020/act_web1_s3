@@ -1,3 +1,17 @@
-// Ejercicio While 2: Suma de Números Pares
-// Implementa un ciclo while que sume todos los números pares entre 1 y 100. 
-// Muestra el resultado final y cuántos números se sumaron.
+  let contador =1
+  let sumarPares =0
+  let contarPares =0
+  
+  while (contador<=50 ){
+    if (contador % 2 === 0 ){
+      sumarPares += contador //sumarPares = sumarPares + contador
+      contarPares +=1  //contarPares = contarPares + 1
+    }
+     contador++
+
+  }
+
+   console.log ("Suma de los numeros pares: " +sumarPares)
+   console.log ("cantidad de numeros pares que se contaron: " +contarPares)
+  
+ 
